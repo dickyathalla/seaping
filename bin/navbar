@@ -1,0 +1,35 @@
+<!-- Navbar -->
+    <!-- <nav class="navbar sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logonav.jpeg" alt="Logo" width="96.61" height="28" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item align-self-center">
+              <a class="nav-link active" aria-current="page" href="#homesecondary">Home</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link active" href="#projects">Project</a>
+            </li>
+            <li class="nav-item dropdown align-self-center">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Social Media </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.instagram.com/dicky_athalla33/" target="_blank">Instagram</a></li>
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/muhammad-dicky-athalla-9b2286205/" target="_blank">linked.in</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#contact">Email me!</a></li>
+              </ul>
+            </li>
+            <a class="btn px-3 bi-box-arrow-right btn-secondary" href="login_register/logout.php" role="button">Log Out</a>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!-- End of Navbar -->
