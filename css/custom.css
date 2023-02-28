@@ -868,3 +868,25 @@ background-color: var(--main-color);
 #my-template{
   width: 100%;
 }
+
+/* login style */
+#login{
+  height: 100vh;
+  background-color: #F7F9FD;
+}
+
+.img-login{
+  width: 380px;
+  height: 110px;
+}
+
+.login-tagline h1{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+  
+  text-align: center;
+}
