@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>High Fidelity - Punggawa/Seaping</title>
+</head>
+<body id="home">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/Logo.svg" alt="Logo" height="28px" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item align-self-center me-2">
+                <a class="nav-link active text-light" aria-current="page" href="home.html">Beranda</a>
+              </li>
+              <li class="nav-item align-self-center me-2">
+                <a class="nav-link active text-light" href="livemap.html">Pelacakan</a>
+              </li>
+              <li class="nav-item align-self-center me-2">
+                <a class="nav-link active text-light" href="home.html">Layanan</a>
+              </li>
+              <li class="nav-item align-self-center me-2">
+                <a class="nav-link active text-light" href="about us.html">Tentang Kami</a>
+              </li>
+            </ul>
+  
+            <div>
+              <button class="button-primary">Masuk</button>
+              <button class="button-secondary">Daftar</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Akhir Navbar -->
+
+      <!-- heading blog -->
+      <section id="hdblog">
+        <div class="container h-100">
+            <div class="row hdblog-tagline">
+                <div class="col-lg-7 col-md-12">
+                    <h3 class="mb-0">Pelacakan Nomor Resi Pengiriman</h3>
+                    <p style="color: #5D5F61;">Pelacakan kapal melalui nomor resi</p>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <p class="mb-0">Lacak Pengiriman Lain</p>
+                    <input type="text" class="form-control" placeholder="Enter Keyword">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of heading blog -->
+
+    <!-- result -->
+    <section id="result">
+        <div class="container h-100">
+            <div class="row mb-5 hdblog-tagline">
+                <div class="col-lg-6 col-md-12 mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3>Detail Pengiriman</h3>
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="main-color text-end">#HWU012730832</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <p class="m-0">Nama Kapal</p>
+                                    <p class="main-color m-0">Gulf Mass 7/23</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="m-0">Asal</p>
+                                    <p class="main-color m-0">Surabaya (IDSUB)</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="m-0">Tujuan</p>
+                                    <p class="main-color m-0">Ambon (IDAMQ)</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-4">
+                                    <p class="m-0">Penerima</p>
+                                    <p class="main-color m-0">Gulf Mass 7/23</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="m-0">Asal</p>
+                                    <p class="main-color m-0">Surabaya (IDSUB)</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="m-0">Tujuan</p>
+                                    <p class="main-color m-0">Ambon (IDAMQ)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                                <h3>Detail Pengiriman</h3>
+                            <div id="content">
+                                <div class="timeline-wrapper"> 
+                                    <ul class="StepProgress">
+                                        <li class="StepProgress-item is-done">
+                                            <div class="bold time">Rab, 31 Jan 2023 17.00</div> 
+                                            <div class="bold fw-bold">Kapal telah berlabuh di Pelabuhan Tujuan.</div>
+                                        </li>
+                                        <li class="StepProgress-item is-done">
+                                            <div class="bold time">Rab, 31 Jan 2023 17.00</div> 
+                                            <div class="bold fw-bold">Kapal mendekati Pelabuhan Tujuan Ambon (IDAMQ).</div>
+                                        </li>
+                                        <li class="StepProgress-item current">
+                                            <div class="bold time">Kam, 26 Jan 2023 13.00</div> 
+                                            <div class="bold fw-bold">Kapal mendekati Pelabuhan Banjarmasin (IDBJS).</div>
+                                        </li>
+                                        <li class="StepProgress-item">
+                                            <div class="bold time">Kam, 25 Jan 2023 12.00</div> 
+                                            <div class="bold fw-bold">Kapal mendekati Pelabuhan Padang (IDPAD).</div>
+                                        </li>
+                                        <li class="StepProgress-item">
+                                            <div class="bold time">Kam, 25 Jan 2023 12.00</div> 
+                                            <div class="bold fw-bold">Kapal berangkat dari Pelabuhan Muat.</div>
+                                        </li>
+                                        <li class="StepProgress-item">
+                                            <div class="bold time">Kam, 25 Jan 2023 12.00</div> 
+                                            <div class="bold fw-bold">Pemesanan pengiriman dibuat.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of result -->
+
+
+</body>
+    <!-- footer -->
+    <section class="">
+        <footer class="footer-ats text-white">
+        <div class="container py-3">
+            <div class="row">
+            <div class="col-md-3 col-lg-5 col-xl-5 mt-3 ftrats">
+                <img src="assets/img/Logo.svg" alt="Logo" height="32px" class="d-inline-block align-text-top mb-3"/>
+                <h5 class="mb-3">
+                PT. Linus Trans Indonesia
+                </h5>
+                <p>
+                Mempermudah dan Memvisualisasikan Pengiriman Container di Indonesia
+                </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mt-3 ftrats">
+                <h6 class="mb-4 font-weight-bold">
+                Navigasi
+                </h6>
+                <p>
+                <a class="text-white text-decoration-none">Beranda</a>
+                </p>
+                <p>
+                <a class="text-white text-decoration-none">Layanan</a>
+                </p>
+                <p>
+                <a class="text-white text-decoration-none">Tentang Kami</a>
+                </p>
+                <p>
+                <a class="text-white text-decoration-none">Bantuan</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-lg-5 col-xl-5 mt-3 ftrats">
+                <h6 class="mb-4 font-weight-bold">Temukan Kami</h6>
+                <p><i class="bi bi-geo-alt-fill me-2"></i>Jl Demak No 326-A, Jepara, Bubutan, Surabaya</p>
+                <p><i class="bi bi-geo-alt-fill me-2"></i>Jakarta Garder City Savoy B2 - 27B, Cakung, Jakarta Timur, DKI Jakarta</p>
+                <p><i class="bi bi-telephone-fill me-2"></i></i>031 99909166</p>
+                <p><i class="bi bi-whatsapp me-2"></i></i>082139991379</p>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bwh text-start py-3">
+            <div class="container">
+            <div class="row">
+                <div class="col-10 align-self-center">
+                © 2023 Seaping. All rights reserved.
+                </div>
+                <div class="col-2 text-end">
+                <a href="" class="btn text-light"><i class="bi bi-facebook" width="24px"></i></a>
+                <a href="" class="btn text-light"><i class="bi bi-instagram" width="24px"></i></a>
+                <a href="" class="btn text-light"><i class="bi bi-youtube" width="24px"></i></a>
+                <a href="" class="btn text-light"><i class="bi bi-linkedin" width="24px"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </footer>
+    </section>
+    <!-- end of footer -->
+</html>

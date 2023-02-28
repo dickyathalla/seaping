@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>High Fidelity - Punggawa/Seaping</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/Logo.svg" alt="Logo" height="28px" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item align-self-center me-2">
+                <a class="nav-link active text-light" aria-current="page" href="home.html">Beranda</a>
+              </li>
+              <li class="nav-item align-self-center me-2">
+                <a class="nav-link active text-light" href="livemap.html">Pelacakan</a>
+              </li>
+              <li class="nav-item align-self-center me-2">
+                <a class="nav-link active text-light" href="home.html">Layanan</a>
+              </li>
+              <li class="nav-item align-self-center me-2">
+                <a class="nav-link active text-light" href="about us.html">Tentang Kami</a>
+              </li>
+            </ul>
+  
+            <div>
+              <button class="button-primary">Masuk</button>
+              <button class="button-secondary">Daftar</button>
+            </div>
+          </div>
+          
+        </div>
+      </nav>
+      <img class="bg-img" src="assets/img/herofcl.png">
+      <!-- Akhir Navbar -->
+
+      <!-- Input Rute -->     
+      <section id="inputrute">
+        <div class="container h-100">
+          <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <div class="row m-0">
+                  <div class="col-3 px-2">
+                    <div class="form-group">
+                      <label class="lbl-form">Tipe Pengiriman</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>
+                          <div>
+                            <div class="material-icons"> &#xe1a1;</div>
+                            <div>cok</div>
+                          </div>
+                        </option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-3 px-2">
+                    <div class="form-group">
+                      <label class="lbl-form">Tipe Pengiriman</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>&#xe532 Full Container Load (FCL)</option> 
+                        <option value="2">Port to Door</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-3 px-2">
+                    <div class="form-group">
+                      <label class="lbl-form">Tipe Pengiriman</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>&#x29E9; Filter</option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-3 px-2">
+                    <div class="form-group">
+                      <label class="lbl-form">Tipe Pengiriman</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>&#x29E9; Filter</option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Input Rute -->
+
+      <!-- hasil -->
+      <section id="hasil">
+        <div class="container h-100">
+          <div class="row">
+            <h5 class="mt-4 mb-0">Menampilkan jadwal dari Surabaya ke Ambon</h5>
+            <p>2 hasil dari 1 rute</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="row">
+                <div class="col-1">
+                  <p class="my-auto">Filter</p>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>&#x29E9; Filter</option> 
+                      <option value="2">Port to Door</option>
+                      <option value="3">Door to Port</option>
+                      <option value="4">Door to Door</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- akhir hasil -->
+
+      <!-- Hasil -->
+      <section id="hasilsch">
+        <div class="container h-100">
+          <div class="row mb-5">
+            <!-- hasil pertama -->
+            <div class="card my-2 px-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2 cardsch my-auto">
+                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                    <p>Full Container Load (FCL)</p>
+                  </div>
+                  <div class="col-4">
+                    <h5 class="main-color mb-1">Surabaya (IDSUB)</h5>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="mb-1">Closing time</p>
+                        <p class="m-0">Est. Time Departure</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                        <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 pe-0">
+                    <div class="row">
+                      <div class="col-1 p-0  d-flex align-items-center position-relative">
+                        <div class="material-icons arrowright p-0 main-color">
+                          arrow_circle_right
+                          </div>
+                      </div>
+                      <div class="col-11">
+                        <h5 class="main-color mb-1">Ambon (IDSUB)</h5>
+                        <div class="row">
+                          <div class="col-6">
+                            <p class="mb-1">Closing time</p>
+                            <p class="m-0">Est. Time Departure</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                            <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 px-0">
+                    <h5 class="main-color m-0 text-center">15.000.000</h5>
+                    <a class="btn-pesan mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
+                    <template id="my-template">
+                      <swal-title>
+                        Save changes to "Untitled 1" before closing?
+                      </swal-title>
+                      <swal-icon type="warning" color="red"></swal-icon>
+                      <swal-button type="confirm">
+                        Save As
+                      </swal-button>
+                      <swal-button type="cancel">
+                        Cancel
+                      </swal-button>
+                      <swal-param name="allowEscapeKey" value="false" />
+                      <swal-param
+                        name="customClass"
+                        value='{ "popup": "my-popup" }' />
+                      <swal-function-param
+                        name="didOpen"
+                        value="popup => console.log(popup)" />
+                    </template>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- hasil kedua -->
+            <div class="card my-2 px-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2 cardsch my-auto">
+                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                    <p>Full Container Load (FCL)</p>
+                  </div>
+                  <div class="col-4">
+                    <h5 class="main-color mb-1">Surabaya (IDSUB)</h5>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="mb-1">Closing time</p>
+                        <p class="m-0">Est. Time Departure</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                        <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 pe-0">
+                    <div class="row">
+                      <div class="col-1 p-0  d-flex align-items-center position-relative">
+                        <div class="material-icons arrowright p-0 main-color">
+                          arrow_circle_right
+                          </div>
+                      </div>
+                      <div class="col-11">
+                        <h5 class="main-color mb-1">Ambon (IDSUB)</h5>
+                        <div class="row">
+                          <div class="col-6">
+                            <p class="mb-1">Closing time</p>
+                            <p class="m-0">Est. Time Departure</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                            <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 px-0">
+                    <h5 class="main-color m-0 text-center">15.000.000</h5>
+                    <a class="btn-pesan mt-3 mx-auto" href="#" role="button">Pesan</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- hasil ketiga -->
+            <div class="card my-2 px-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2 cardsch my-auto">
+                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                    <p>Full Container Load (FCL)</p>
+                  </div>
+                  <div class="col-4">
+                    <h5 class="main-color mb-1">Surabaya (IDSUB)</h5>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="mb-1">Closing time</p>
+                        <p class="m-0">Est. Time Departure</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                        <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 pe-0">
+                    <div class="row">
+                      <div class="col-1 p-0  d-flex align-items-center position-relative">
+                        <div class="material-icons arrowright p-0 main-color">
+                          arrow_circle_right
+                          </div>
+                      </div>
+                      <div class="col-11">
+                        <h5 class="main-color mb-1">Ambon (IDSUB)</h5>
+                        <div class="row">
+                          <div class="col-6">
+                            <p class="mb-1">Closing time</p>
+                            <p class="m-0">Est. Time Departure</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                            <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 px-0">
+                    <h5 class="main-color m-0 text-center">15.000.000</h5>
+                    <a class="btn-pesan mt-3 mx-auto" href="#" role="button">Pesan</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Hasil -->
+    
+</body>
+    <!-- footer -->
+    <section class="">
+      <footer class="footer-ats text-white">
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-md-3 col-lg-5 col-xl-5 mt-3 ftrats">
+              <img src="assets/img/Logo.svg" alt="Logo" height="32px" class="d-inline-block align-text-top mb-3"/>
+              <h5 class="mb-3">
+                PT. Linus Trans Indonesia
+              </h5>
+              <p>
+                Mempermudah dan Memvisualisasikan Pengiriman Container di Indonesia
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mt-3 ftrats">
+              <h6 class="mb-4 font-weight-bold">
+                Navigasi
+              </h6>
+              <p>
+                <a class="text-white text-decoration-none">Beranda</a>
+              </p>
+              <p>
+                <a class="text-white text-decoration-none">Layanan</a>
+              </p>
+              <p>
+                <a class="text-white text-decoration-none">Tentang Kami</a>
+              </p>
+              <p>
+                <a class="text-white text-decoration-none">Bantuan</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-5 col-xl-5 mt-3 ftrats">
+              <h6 class="mb-4 font-weight-bold">Temukan Kami</h6>
+              <p><i class="bi bi-geo-alt-fill me-2"></i>Jl Demak No 326-A, Jepara, Bubutan, Surabaya</p>
+              <p><i class="bi bi-geo-alt-fill me-2"></i>Jakarta Garder City Savoy B2 - 27B, Cakung, Jakarta Timur, DKI Jakarta</p>
+              <p><i class="bi bi-telephone-fill me-2"></i></i>031 99909166</p>
+              <p><i class="bi bi-whatsapp me-2"></i></i>082139991379</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bwh text-start py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-10 align-self-center">
+                © 2023 Seaping. All rights reserved.
+              </div>
+              <div class="col-2 text-end">
+                <a href="" class="btn text-light"><i class="bi bi-facebook" width="24px"></i></a>
+                <a href="" class="btn text-light"><i class="bi bi-instagram" width="24px"></i></a>
+                <a href="" class="btn text-light"><i class="bi bi-youtube" width="24px"></i></a>
+                <a href="" class="btn text-light"><i class="bi bi-linkedin" width="24px"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- end of footer -->
+
+    <script>
+            Swal.bindClickHandler()
+
+      Swal.mixin({
+        toast: false,
+      }).bindClickHandler('data-swal-template')
+        
+      </script>
+</html>
