@@ -1,0 +1,3 @@
+[submodule "seaping"]
+    path = seaping
+    url = https://github.com/slpwlkr33/seaping.git
