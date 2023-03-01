@@ -43,8 +43,12 @@
           </ul>
 
           <div>
-            <button class="button-primary">Masuk</button>
-            <button class="button-secondary">Daftar</button>
+            <a href="login.html">
+              <button class="button-primary">Masuk</button>
+            </a>
+            <a href="register.html">
+              <button class="button-secondary">Daftar</button>
+            </a>
           </div>
         </div>
       </div>
@@ -82,10 +86,8 @@
                           <div class="form-group">
                             <label class="lbl-form">Tipe Muatan</label>
                             <select class="form-select" aria-label="Default select example">
-                              <option selected>&#xe532; Filter</option> 
-                              <option value="2"> Port to Door</option>
-                              <option value="3">Door to Port</option>
-                              <option value="4">Door to Door</option>
+                              <option selected>&#xe532; Full Container Load (FCL)</option> 
+                              <option value="2"> Less Container Load (LCL)</option>
                             </select>
                           </div>
                         </div>
@@ -96,9 +98,11 @@
                             <label class="lbl-form">Asal</label>
                             <select class="form-select" aria-label="Disabled select example" disabled>
                               <option selected> Pilih Asal</option> 
-                              <option value="2">Port to Door</option>
-                              <option value="3">Door to Port</option>
-                              <option value="4">Door to Door</option>
+                              <option value="2">Ambon (IDAMQ), Kep. Maluku</option>
+                              <option value="3">Balikpapan (IDBPN), Kalimantan</option>
+                              <option value="4">Banda Aceh (IDBTJ), Sumatera</option>
+                              <option value="4">...</option>
+                              <option value="4">Tual (IDTUA), Kep. Maluku</option>
                             </select>
                           </div>
                         </div>
@@ -107,9 +111,11 @@
                             <label class="lbl-form">Tujuan</label>
                             <select class="form-select" aria-label="Disabled select example" disabled>
                               <option class="material-icons" selected>&#xe1a1; Pilih Tujuan</option> 
-                              <option value="2 material-icons">&#xe532; Port to Door</option>
-                              <option value="3">Door to Port</option>
-                              <option value="4">Door to Door</option>
+                              <option value="2">Ambon (IDAMQ), Kep. Maluku</option>
+                              <option value="3">Balikpapan (IDBPN), Kalimantan</option>
+                              <option value="4">Banda Aceh (IDBTJ), Sumatera</option>
+                              <option value="4">...</option>
+                              <option value="4">Tual (IDTUA), Kep. Maluku</option>
                             </select>
                           </div>
                         </div>
@@ -127,6 +133,15 @@
           </div>
       </section>
     <!-- End of Hero section -->
+
+    <!-- whatsapp floating -->
+      <a href="https://api.whatsapp.com/send?phone=082139991379" target="_blank">
+        <button id="wa" class="btn-floating d-flex align-items-center">
+          <img src="assets/img/whatsapp-48.png" alt="wa" width="28px">
+          <span>082139991379</span>
+        </button>
+      </a>
+    <!-- end of wa floating -->
 
     <!-- layanan -->
       <section id="layanan">
@@ -466,10 +481,10 @@
       <div class="footer-bwh text-start py-3">
         <div class="container">
           <div class="row">
-            <div class="col-10 align-self-center">
+            <div class="col-9 align-self-center">
               © 2023 Seaping. All rights reserved.
             </div>
-            <div class="col-2 text-end">
+            <div class="col-3 text-end">
               <a href="" class="btn text-light"><i class="bi bi-facebook" width="24px"></i></a>
               <a href="" class="btn text-light"><i class="bi bi-instagram" width="24px"></i></a>
               <a href="" class="btn text-light"><i class="bi bi-youtube" width="24px"></i></a>

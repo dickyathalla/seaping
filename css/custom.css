@@ -185,6 +185,46 @@ body {
   
 } */
 
+/* wa floating style */
+#wa.btn-floating{
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  overflow: hidden;
+  width: 50px;
+  padding-left: 9px;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  z-index: 99;
+  color: white;
+  transition: .2s;
+  background-color: #34af23;
+}
+
+#wa.btn-floating:hover{
+  width: auto;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+#wa.btn-floating:hover img{
+  margin-bottom: -3px;
+}
+
+#wa.btn-floating span{
+  font-family: var(--button-font);
+  font-size: 16px;
+  margin-left: 5px;
+  transition: .2s;
+  line-height: 0px;
+  display: none;
+}
+
+#wa.btn-floating:hover span{
+  display: inline-block;
+}
+
 /* Layanan Section */
 #layanan{
   height: 672px;
@@ -889,4 +929,104 @@ background-color: var(--main-color);
   /* identical to box height, or 122% */
   
   text-align: center;
+}
+
+.btn-login{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 4px;
+  
+  width: 421px;
+  height: 40px;
+  
+  /* Neutral/30 */
+  
+  background: #E4E9EC;
+  border-radius: 8px;
+}
+
+.btn-login:hover{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 4px;
+  
+  width: 421px;
+  height: 40px;
+  
+  /* Neutral/30 */
+  
+  background: var(--main-color);
+  border-radius: 8px;
+
+  color: #FFF;
+}
+
+#login a{
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#login label{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.persetujuan{
+  width: 443px;;
+}
+
+#login form{
+  margin: 240px;
+  width: fit-content;
+}
+
+.login-tagline h3{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* register style */
+#register{
+  height: 100vh;
+  background-color: #F7F9FD;
+}
+
+#register a{
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#register label{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#register form{
+  margin: 240px;
+  margin-top: 100px;
+  margin-bottom: 0;
+  width: fit-content;
 }
