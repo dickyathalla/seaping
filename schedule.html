@@ -15,43 +15,49 @@
 </head>
 <body>
     <!-- Navbar -->
+    <input type="checkbox" id="toggle">
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="assets/img/Logo.svg" alt="Logo" height="28px" class="d-inline-block align-text-top" />
+            <img src="assets/img/Logo.svg" alt="Logo" height="28px" class="" />
           </a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+         
+          <label class="navbar-toggler" style="color:none;border:none;" for="toggle">
+            <span class="bar" ></span>
+            <span class="bar" ></span>
+            <span class="bar" ></span>
+          </label>
   
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item align-self-center me-2">
+          
+            <ul class="nav-list navbar-nav ms-auto p-3 mb-2 mb-lg-0">
+              <li class="nav-item align-self-center align-self-md-start me-2">
                 <a class="nav-link active text-light" aria-current="page" href="index.html">Beranda</a>
               </li>
-              <li class="nav-item align-self-center me-2">
+              <li class="nav-item align-self-center align-self-md-start me-2">
                 <a class="nav-link active text-light" href="livemap.html">Pelacakan</a>
               </li>
-              <li class="nav-item align-self-center me-2">
+              <li class="nav-item align-self-center align-self-md-start me-2">
                 <a class="nav-link active text-light" href="index.html">Layanan</a>
               </li>
-              <li class="nav-item align-self-center me-2">
+              <li class="nav-item align-self-center align-self-md-start me-2">
                 <a class="nav-link active text-light" href="about us.html">Tentang Kami</a>
               </li>
-            </ul>
-  
-            <div>
+              <li class="nav-item align-self-center align-self-md-start me-2">
               <a href="login.html">
                 <button class="button-primary">Masuk</button>
               </a>
-              <a href="register.html">
+              </li>
+              <li class="nav-item align-self-center align-self-md-start me-2">
+               <a href="register.html">
                 <button class="button-secondary">Daftar</button>
               </a>
+              </li>
+            </ul>
             </div>
           </div>
-          
         </div>
       </nav>
+
       <img class="bg-img" src="assets/img/herofcl.png">
       <!-- Akhir Navbar -->
 
@@ -59,7 +65,7 @@
       <section id="inputrute">
         <div class="container h-100">
           <div class="row">
-            <div class="card">
+            <div class="modal-remove card">
               <div class="card-body">
                 <div class="row m-0">
                   <div class="col-3 px-2">
@@ -121,11 +127,16 @@
       <section id="hasil">
         <div class="container h-100">
           <div class="row">
-            <h5 class="mt-4 mb-0">Menampilkan jadwal dari Surabaya ke Ambon</h5>
-            <p>2 hasil dari 1 rute</p>
+            <div class="col-8">
+              <h5 class="mt-4 mb-0">Menampilkan jadwal dari Surabaya ke Ambon</h5>
+              <p>2 hasil dari 1 rute</p>
+            </div>
+            <div class="col-4">
+               <button class="filter-tab btn ms-5 mt-4 mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">&#x29E9; Filter & Sort</button>
+            </div>
           </div>
           <div class="row">
-            <div class="col-lg-5">
+            <div class="filter-schedule col-lg-5">
               <div class="row">
                 <div class="col-1">
                   <p class="my-auto">Filter</p>
@@ -143,22 +154,60 @@
               </div>
             </div>
             <div class="col-lg-4 mb-2">
-
+             
             </div>
           </div>
         </div>
       </section>
       <!-- akhir hasil -->
+      <!--offcanvas-->
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="reset-offcanvas mx-auto text-reset start-50  translate-middle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
+          <!-- <h5 class="offcanvas-title mt-5" id="offcanvasBottomLabel">Temukan Jadwal Lain</h5> -->
+          <!-- <span class="line-reset text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="width:20px;"></span> -->
+        </div>
+        <div class="offcanvas-body small">
+          <h3 class>Temukan Jadwal Lain</h3>
+        </div>
+      </div>
+      <!--offcanvas-->
       <!-- Hasil -->
       <section id="hasilsch">
         <div class="container h-100">
-          <div class="row mb-5">
+          <div class="row mb-5 mx-auto">
             <!-- hasil pertama -->
             <div class="card my-2 px-0">
               <div class="card-body">
-                <div class="row">
-                  <div class="col-2 cardsch my-auto">
+                <div class="tab-row row mx-auto">
+                  <div class="col-6">
+                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
+                       <p class="mb-1">Closing time</p>
+                        <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                        <p class="m-0">Est. Time Departure</p>
+                        <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                  </div>
+                   <div class="arrow-circle col-2 d-flex align-items-center position-relative">
+                        <div class="material-icons arrowright p-0 main-color">
+                          arrow_circle_right
+                          </div>
+                      </div>
+                  <div class="card-tab col-4">
+                    <p class="float-right">Full Container Load (FCL)</p>
+              
+                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
+                       <p class="mb-1">Est.Time Arrival</p>
+                        <p class="mb-1 fw-bold">25-Jan-2023 14.00</p>
+                        <p class="m-0">Est. Time Berthing</p>
+                        <p class="m-0 fw-bold">25-Jan-2023 16.00</p>
+                      </div>
+                     <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
+
+                </div>
+                <div class="desktop-row row mx-auto">
+                  <div class="col-2 col-md-push-3 cardsch my-auto">
                     <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
                     <p>Full Container Load (FCL)</p>
                   </div>
@@ -169,6 +218,7 @@
                         <p class="mb-1">Closing time</p>
                         <p class="m-0">Est. Time Departure</p>
                       </div>
+                     
                       <div class="col-6">
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
@@ -202,14 +252,14 @@
                     <a class="btn-pesan mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
                     <template id="my-template">
                       <swal-title>
-                        Save changes to "Untitled 1" before closing?
+                        Anda harus Masuk untuk melakukan pemesanan
                       </swal-title>
-                      <swal-icon type="warning" color="red"></swal-icon>
-                      <swal-button type="confirm">
-                        Save As
+                      <!-- <swal-icon type="warning" color="red"></swal-icon> -->
+                      <swal-button type="confirm" style="background-color: #2F5597;">
+                        Masuk
                       </swal-button>
                       <swal-button type="cancel">
-                        Cancel
+                        Batal
                       </swal-button>
                       <swal-param name="allowEscapeKey" value="false" />
                       <swal-param
@@ -226,8 +276,34 @@
             <!-- hasil kedua -->
             <div class="card my-2 px-0">
               <div class="card-body">
-                <div class="row">
-                  <div class="col-2 cardsch my-auto">
+                <div class="tab-row row mx-auto">
+                  <div class="col-6">
+                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
+                       <p class="mb-1">Closing time</p>
+                        <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                        <p class="m-0">Est. Time Departure</p>
+                        <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                  </div>
+                   <div class="arrow-circle col-2 d-flex align-items-center position-relative">
+                        <div class="material-icons arrowright p-0 main-color">
+                          arrow_circle_right
+                          </div>
+                      </div>
+                  <div class="card-tab col-4">
+                    <p class="float-right">Full Container Load (FCL)</p>
+              
+                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
+                       <p class="mb-1">Est.Time Arrival</p>
+                        <p class="mb-1 fw-bold">25-Jan-2023 14.00</p>
+                        <p class="m-0">Est. Time Berthing</p>
+                        <p class="m-0 fw-bold">25-Jan-2023 16.00</p>
+                      </div>
+                     <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
+
+                </div>
+                <div class="desktop-row row mx-auto">
+                  <div class="col-2 col-md-push-3 cardsch my-auto">
                     <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
                     <p>Full Container Load (FCL)</p>
                   </div>
@@ -238,6 +314,7 @@
                         <p class="mb-1">Closing time</p>
                         <p class="m-0">Est. Time Departure</p>
                       </div>
+                     
                       <div class="col-6">
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
@@ -268,7 +345,26 @@
                   </div>
                   <div class="col-2 px-0">
                     <h5 class="main-color m-0 text-center">15.000.000</h5>
-                    <a class="btn-pesan mt-3 mx-auto" href="#" role="button">Pesan</a> 
+                    <a class="btn-pesan mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
+                    <template id="my-template">
+                      <swal-title>
+                        Anda harus Masuk untuk melakukan pemesanan
+                      </swal-title>
+                      <!-- <swal-icon type="warning" color="red"></swal-icon> -->
+                      <swal-button type="confirm" style="background-color: #2F5597;">
+                        Masuk
+                      </swal-button>
+                      <swal-button type="cancel">
+                        Batal
+                      </swal-button>
+                      <swal-param name="allowEscapeKey" value="false" />
+                      <swal-param
+                        name="customClass"
+                        value='{ "popup": "my-popup" }' />
+                      <swal-function-param
+                        name="didOpen"
+                        value="popup => console.log(popup)" />
+                    </template>
                   </div>
                 </div>
               </div>
@@ -276,8 +372,34 @@
             <!-- hasil ketiga -->
             <div class="card my-2 px-0">
               <div class="card-body">
-                <div class="row">
-                  <div class="col-2 cardsch my-auto">
+                <div class="tab-row row mx-auto">
+                  <div class="col-6">
+                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
+                       <p class="mb-1">Closing time</p>
+                        <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
+                        <p class="m-0">Est. Time Departure</p>
+                        <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
+                  </div>
+                   <div class="arrow-circle col-2 d-flex align-items-center position-relative">
+                        <div class="material-icons arrowright p-0 main-color">
+                          arrow_circle_right
+                          </div>
+                      </div>
+                  <div class="card-tab col-4">
+                    <p class="float-right">Full Container Load (FCL)</p>
+              
+                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
+                       <p class="mb-1">Est.Time Arrival</p>
+                        <p class="mb-1 fw-bold">25-Jan-2023 14.00</p>
+                        <p class="m-0">Est. Time Berthing</p>
+                        <p class="m-0 fw-bold">25-Jan-2023 16.00</p>
+                      </div>
+                     <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
+
+                </div>
+                <div class="desktop-row row mx-auto">
+                  <div class="col-2 col-md-push-3 cardsch my-auto">
                     <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
                     <p>Full Container Load (FCL)</p>
                   </div>
@@ -288,6 +410,7 @@
                         <p class="mb-1">Closing time</p>
                         <p class="m-0">Est. Time Departure</p>
                       </div>
+                     
                       <div class="col-6">
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
@@ -318,7 +441,26 @@
                   </div>
                   <div class="col-2 px-0">
                     <h5 class="main-color m-0 text-center">15.000.000</h5>
-                    <a class="btn-pesan mt-3 mx-auto" href="#" role="button">Pesan</a> 
+                    <a class="btn-pesan mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
+                    <template id="my-template">
+                      <swal-title>
+                        Anda harus Masuk untuk melakukan pemesanan
+                      </swal-title>
+                      <!-- <swal-icon type="warning" color="red"></swal-icon> -->
+                      <swal-button type="confirm" style="background-color: #2F5597;">
+                        Masuk
+                      </swal-button>
+                      <swal-button type="cancel">
+                        Batal
+                      </swal-button>
+                      <swal-param name="allowEscapeKey" value="false" />
+                      <swal-param
+                        name="customClass"
+                        value='{ "popup": "my-popup" }' />
+                      <swal-function-param
+                        name="didOpen"
+                        value="popup => console.log(popup)" />
+                    </template>
                   </div>
                 </div>
               </div>
