@@ -26,6 +26,12 @@ body {
   color: #3D3F40;
 }
 
+.container{
+  margin-left: 60px;
+  margin-right: 60px;
+  width: auto;
+}
+
 /* Home.html style */
 /* Navbar style */
 .navbar {
@@ -91,9 +97,15 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width:1300px){
+@media screen and (min-width:768px) and (max-width:900px){
   #hero{
-    height: 90vh;
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width:0px) and (max-width:767px){
+  #hero{
+    height: 110vh;
   }
 }
 
@@ -105,6 +117,17 @@ body {
   line-height: 58px;
   text-transform: capitalize;
 }
+
+.hero-tagline h1{
+  font-family: var(--heading-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: capitalize;
+}
+
+
 
 .hero-tagline p{
   font-family: var(--heading-font);
@@ -125,8 +148,6 @@ body {
   border: 0;
   border-radius: 12px;
   padding: 20px 32px;
-  width: 808px;
-  height: 300px;
   font-family: var(--main-font);
   font-weight: 800;
   font-size: 28px;
@@ -227,8 +248,7 @@ body {
 
 /* Layanan Section */
 #layanan{
-  height: 672px;
-  width: 100%;
+  height: 100%;
   left: 0px;
   top: 724px;
   border-radius: 0px;
@@ -245,11 +265,12 @@ body {
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 48px;
   line-height: 58px;
   text-transform: capitalize;
   text-align: center;
 }
+
 
 .card-tagline h5{
   font-family: var(--main-font);
@@ -289,7 +310,7 @@ body {
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 48px;
   line-height: 58px;
   text-transform: capitalize;
 }
@@ -319,12 +340,23 @@ body {
 }
 
 
-.mengapa-card{
-  z-index: 3;
-  left: -63px;
-  border: 0;
-  border-radius: 16px;
-  width: 342px;
+@media screen and (min-width:400px) and (max-width:900px){
+  .mengapa-card{
+    left: 0px;
+    border: 0;
+    border-radius: 16px;
+    width: 342px;
+  }
+}
+
+@media screen and (min-width:900px){
+  .mengapa-card{
+    z-index: 3;
+    left: -63px;
+    border: 0;
+    border-radius: 16px;
+    width: 342px;
+  }
 }
 
 .mengapa-tagline .material-icons{
@@ -348,7 +380,7 @@ body {
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 48px;
   line-height: 58px;
   text-transform: capitalize;
   text-align: center;
@@ -356,6 +388,12 @@ body {
 
 .step-img{
   width: 90%;
+}
+
+.rotate-90{
+  transform: rotate(90deg);
+  left: -12px;
+  position: relative;
 }
 
 /* Artikel style */
@@ -449,6 +487,25 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: white;
+}
+
+@media screen and (min-width:820px) {
+  .ftrdesc{
+    width: 300px;
+  }
+}
+
+
+.btn-selengkapnya{
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--main-color);
+}
+
+.btn-selengkapnya a{
+  background-color: #DCE5F4;
 }
 
 /* about.html style */
@@ -621,6 +678,13 @@ body {
 /* resi style */
 #resi{
   height: 80vh;
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+  .inputresi{
+    display: block;
+    width: 100%;
+}
 }
 
 /* .lacak p{
@@ -1029,4 +1093,113 @@ background-color: var(--main-color);
   margin-top: 100px;
   margin-bottom: 0;
   width: fit-content;
+}
+
+
+/* Media Query */
+@media screen and (min-width:600px) and (max-width:900px) {
+  .hero-tagline h1{
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: capitalize;
+  }    
+  .mengapa-tagline h1{
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    text-transform: capitalize;
+  }
+  .layanan-tagline h1{
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .tutor-tagline h1{
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: capitalize;
+  }
+  .btn-carijadwal{
+    background: #2F5597;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 4px;
+    display: block;
+    
+    width: 100%;
+    height: 40px;
+  
+    color: white;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width:0px) and (max-width:600px) {
+  .container{
+    margin-left: 8px;
+    margin-right: 8px;
+    width: auto;
+  }
+  .hero-tagline h1{
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    text-align: center;
+  }    
+  .hero-tagline p{ 
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;  
+    text-align: center;
+  }
+  .layanan-tagline h1{
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .mengapa-tagline h1{
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
+  .tutor-tagline h1{
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
 }
