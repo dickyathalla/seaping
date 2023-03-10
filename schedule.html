@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -12,6 +15,14 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/custom.css" />
     <title>Result</title>
+    <style>
+			.input-group-append {
+				cursor: pointer;
+        background-color: #2F5597;
+			}
+   
+			
+		</style>
 </head>
 <body>
     <!-- Navbar -->
@@ -58,12 +69,12 @@
         </div>
       </nav>
 
-      <img class="bg-img" src="assets/img/herofcl.png">
+      <img class="bg-img d-none d-md-block" src="assets/img/herofcl.png">
       <!-- Akhir Navbar -->
-
+      
       <!-- Input Rute -->     
       <section id="inputrute">
-        <div class="container h-100">
+        <div class="container h-100 justify-content-center">
           <div class="row">
             <div class="modal-remove card">
               <div class="card-body">
@@ -127,41 +138,69 @@
       <section id="hasil">
         <div class="container h-100">
           <div class="row">
-            <div class="col-8">
-              <h5 class="mt-4 mb-0">Menampilkan jadwal dari Surabaya ke Ambon</h5>
+            <div class="col-12 col-md-8 ">
+              <h5 class="mt-sm-0 mt-md-4 mb-0">Menampilkan jadwal dari Surabaya ke Ambon</h5>
               <p>2 hasil dari 1 rute</p>
             </div>
             <div class="col-4">
-               <button class="filter-tab btn ms-5 mt-4 mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">&#x29E9; Filter & Sort</button>
+               <button class="filter-tab btn ms-5 mt-4 mb-0 d-none d-md-block btn-floating d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">&#x29E9; Filter & Sort</button>
             </div>
           </div>
           <div class="row">
             <div class="filter-schedule col-lg-5">
               <div class="row">
-                <div class="col-1">
-                  <p class="my-auto">Filter</p>
+                <div class="col-1  me-2 align-self-center">
+                  <p class="lbl-form-urutkan  mt-2 me-2">Filter</p>
                 </div>
-                <div class="col-4">
-                  <div class="form-group">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>&#x29E9; Filter</option> 
-                      <option value="2">Port to Door</option>
-                      <option value="3">Door to Port</option>
-                      <option value="4">Door to Door</option>
-                    </select>
+                <div class="col-6">
+                  <div class="input-group date bg-white border border-secondary rounded-3"style="width:250px;" id="datepicker">
+                    <i class="fa fa-calendar ms-2 me-2 align-self-center"></i>
+                    <!-- <span class="input-group-text bg-red d-block"> -->
+                    <input type="text" placeholder="Tanggal Keberangkatan" class="form-control border border-white me-3" id="date"/>
+                    <span class="input-group-append">
+                    </span>
+                    </span>
                   </div>
+                  </div>
+                <div class="col-4 ms-4" >
+                  <div class="input-group bg-white border border-secondary rounded-3"style="width:170px;">
+                    <i class="fa fa-ship ms-2 me-2 align-self-center"></i>
+                    <!-- <span class="input-group-text bg-red d-block"> -->
+                    <input type="text" placeholder="Nama Kapal" class="form-control border border-white"/>
+                    <!-- <span class="input-group-append"> -->
+                    </span>
+                    </span>
+                  </div>
+                  </div>
+                
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-2">
-             
+                
+                  </div>
+                <div class="sort-time col text-end "> 
+                <!-- <div class="form-group" > -->
+                      <label class="lbl-form-urutkan align-self-center me-2 mt-2">Urutkan</label>
+                      <select class="form-select float-end d-fixed border border-secondary rounded-3" style="width:50%;" aria-label="Default select example">
+                        <option selected>
+                          <div>
+                            <div class="material-icons"> &#xe1a1;</div>
+                            <div>Keberangkatan paling awal</div>
+                          </div>
+                        </option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>  
+              <!-- </div> -->
             </div>
           </div>
         </div>
       </section>
+      <button  id="filter" class="filter-tab btn ms-5 mt-4 mb-0 d-block d-md-none  btn-floating d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">&#x29E9; Filter & Sort</button>
+
       <!-- akhir hasil -->
       <!--offcanvas-->
-      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas offcanvas-bottom mx-auto" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
           <button type="button" class="reset-offcanvas mx-auto text-reset start-50  translate-middle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
@@ -169,7 +208,102 @@
           <!-- <span class="line-reset text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="width:20px;"></span> -->
         </div>
         <div class="offcanvas-body small">
-          <h3 class>Temukan Jadwal Lain</h3>
+          <!-- <h3 class>Temukan Jadwal Lain</h3> -->
+          <div class="form-group mt-2">
+            <h3 class="">Temukan Jadwal Lain</h3>
+                      <label class="lbl-form">Tipe Pengiriman</label>
+                      <select class="form-select mt-1" aria-label="Default select example">
+                        <option selected>
+                          <div>
+                            <div class="material-icons"> &#xe1a1;</div>
+                            <div>Port to Port</div>
+                          </div>
+                        </option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>
+        <div class="form-group mt-2">
+                      <label class="lbl-form">Tipe Muatan</label>
+                      <select class="form-select mt-1" aria-label="Default select example">
+                        <option selected>
+                          <div>
+                            <div class="material-icons"> &#xe1a1;</div>
+                            <div>Port to Port</div>
+                          </div>
+                        </option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>
+                    <div class="form-group mt-2">
+                      <label class="lbl-form">Asal</label>
+                      <select class="form-select mt-1" aria-label="Default select example">
+                        <option selected>
+                          <div>
+                            <div class="material-icons"> &#xe1a1;</div>
+                            <div>Port to Port</div>
+                          </div>
+                        </option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>
+                    <div class="form-group mt-2">
+                      <label class="lbl-form">Tujuan</label>
+                      <select class="form-select mt-1" aria-label="Default select example">
+                        <option selected>
+                          <div>
+                            <div class="material-icons"> &#xe1a1;</div>
+                            <div>Port to Port</div>
+                          </div>
+                        </option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>
+                    <h5 class="mt-2">Filter dan Urutkan</h5>
+                    <div class="form-group mt-2">
+                      <label class="lbl-form">Tanggal Keberangkatan</label>
+                      <div class="input-group date bg-white border border-secondary rounded-3" style="width:100%;" id="datepicker">
+                    <i class="fa fa-calendar ms-2 me-2 align-self-center"></i>
+                    <!-- <span class="input-group-text bg-red d-block"> -->
+                    <input type="text" placeholder="Tanggal Keberangkatan" class="form-control border border-white me-3" id="date"/>
+                    <span class="input-group-append">
+                    </span>
+                    </span>
+                  </div>
+                    </div>
+                    <div class="form-group mt-2">
+                      <label class="lbl-form">Nama Kapal</label>
+                     <div class="input-group mt-2 border border-secondary rounded-3"style="width:100%;">
+                    <i class="fa fa-ship ms-2 me-2 align-self-center"></i>
+                    <!-- <span class="input-group-text bg-red d-block"> -->
+                    <input type="text" placeholder="Nama Kapal" class="form-control border border-white"/>
+                    <!-- <span class="input-group-append"> -->
+                    </span>
+                    </span>
+                  </div>
+                    </div>
+                    <div class="form-group mt-2">
+                      <label class="lbl-form">Tipe Pengiriman</label>
+                     <select class="form-select  border border-secondary rounded-3" style="width:100%;" aria-label="Default select example">
+                        <option selected>
+                          <div>
+                            <div class="material-icons"> &#xe1a1;</div>
+                            <div>Keberangkatan paling awal</div>
+                          </div>
+                        </option> 
+                        <option value="2">Port to Door</option>
+                        <option value="3">Door to Port</option>
+                        <option value="4">Door to Door</option>
+                      </select>
+                    </div>
+                    <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
         </div>
       </div>
       <!--offcanvas-->
@@ -181,27 +315,34 @@
             <div class="card my-2 px-0">
               <div class="card-body">
                 <div class="tab-row row mx-auto">
-                  <div class="col-6">
-                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                  <div class="row">
+                    <div class="col-7 ">
+                    <h5 class="main-color fw-bolder mb-1 d-block d-md-none">Gulf Mass 5/23</h5>
+                    <p class="woy d-block d-md-none">Full Container Load (FCL)</p>
+                  </div>
+                  </div>
+                  <div class="col-5 col-md-6">
+                    <h5 class="main-color fw-bolder mb-1 d-none d-md-block">Gulf Mass 5/23</h5>
+                    
                       <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
                        <p class="mb-1">Closing time</p>
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0">Est. Time Departure</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
                   </div>
-                   <div class="arrow-circle col-2 d-flex align-items-center position-relative">
+                   <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
                         <div class="material-icons arrowright p-0 main-color">
                           arrow_circle_right
                           </div>
                       </div>
-                  <div class="card-tab col-4">
-                    <p class="float-right">Full Container Load (FCL)</p>
-              
-                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
-                       <p class="mb-1">Est.Time Arrival</p>
-                        <p class="mb-1 fw-bold">25-Jan-2023 14.00</p>
-                        <p class="m-0">Est. Time Berthing</p>
-                        <p class="m-0 fw-bold">25-Jan-2023 16.00</p>
+                  <div class="card-tab col-5">
+                    <!-- <p class=" text-end">Full Container Load (FCL)</p> -->
+                     <p class=" d-none d-md-block text-end">Full Container Load (FCL)</p>
+                      <h5 class="main-color mb-1 mt-4  text-end">Surabaya (IDSUB)</h5>
+                       <p class="mb-1  text-end">Est.Time Arrival</p>
+                        <p class="mb-1 fw-bold  text-end">25-Jan-2023 14.00</p>
+                        <p class="m-0  text-end">Est. Time Berthing</p>
+                        <p class="m-0 fw-bold  text-end">25-Jan-2023 16.00</p>
                       </div>
                      <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
 
@@ -271,33 +412,41 @@
                     </template>
                   </div>
                 </div>
+                
               </div>
             </div>
             <!-- hasil kedua -->
             <div class="card my-2 px-0">
               <div class="card-body">
                 <div class="tab-row row mx-auto">
-                  <div class="col-6">
-                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                 <div class="row">
+                    <div class="col-7 ">
+                    <h5 class="main-color fw-bolder mb-1 d-block d-md-none">Gulf Mass 5/23</h5>
+                    <p class="woy d-block d-md-none">Full Container Load (FCL)</p>
+                  </div>
+                  </div>
+                  <div class="col-5 col-md-6">
+                    <h5 class="main-color fw-bolder mb-1 d-none d-md-block">Gulf Mass 5/23</h5>
+                    
                       <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
                        <p class="mb-1">Closing time</p>
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0">Est. Time Departure</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
                   </div>
-                   <div class="arrow-circle col-2 d-flex align-items-center position-relative">
+                   <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
                         <div class="material-icons arrowright p-0 main-color">
                           arrow_circle_right
                           </div>
                       </div>
-                  <div class="card-tab col-4">
-                    <p class="float-right">Full Container Load (FCL)</p>
-              
-                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
-                       <p class="mb-1">Est.Time Arrival</p>
-                        <p class="mb-1 fw-bold">25-Jan-2023 14.00</p>
-                        <p class="m-0">Est. Time Berthing</p>
-                        <p class="m-0 fw-bold">25-Jan-2023 16.00</p>
+                  <div class="card-tab col-5">
+                    <!-- <p class=" text-end">Full Container Load (FCL)</p> -->
+                     <p class=" d-none d-md-block text-end">Full Container Load (FCL)</p>
+                      <h5 class="main-color mb-1 mt-4  text-end">Surabaya (IDSUB)</h5>
+                       <p class="mb-1  text-end">Est.Time Arrival</p>
+                        <p class="mb-1 fw-bold  text-end">25-Jan-2023 14.00</p>
+                        <p class="m-0  text-end">Est. Time Berthing</p>
+                        <p class="m-0 fw-bold  text-end">25-Jan-2023 16.00</p>
                       </div>
                      <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
 
@@ -367,33 +516,41 @@
                     </template>
                   </div>
                 </div>
+                
               </div>
             </div>
             <!-- hasil ketiga -->
             <div class="card my-2 px-0">
               <div class="card-body">
                 <div class="tab-row row mx-auto">
-                  <div class="col-6">
-                    <h5 class="main-color fw-bolder mb-1">Gulf Mass 5/23</h5>
+                 <div class="row">
+                    <div class="col-7 ">
+                    <h5 class="main-color fw-bolder mb-1 d-block d-md-none">Gulf Mass 5/23</h5>
+                    <p class="woy d-block d-md-none">Full Container Load (FCL)</p>
+                  </div>
+                  </div>
+                  <div class="col-5 col-md-6">
+                    <h5 class="main-color fw-bolder mb-1 d-none d-md-block">Gulf Mass 5/23</h5>
+                    
                       <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
                        <p class="mb-1">Closing time</p>
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0">Est. Time Departure</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
                   </div>
-                   <div class="arrow-circle col-2 d-flex align-items-center position-relative">
+                   <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
                         <div class="material-icons arrowright p-0 main-color">
                           arrow_circle_right
                           </div>
                       </div>
-                  <div class="card-tab col-4">
-                    <p class="float-right">Full Container Load (FCL)</p>
-              
-                      <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
-                       <p class="mb-1">Est.Time Arrival</p>
-                        <p class="mb-1 fw-bold">25-Jan-2023 14.00</p>
-                        <p class="m-0">Est. Time Berthing</p>
-                        <p class="m-0 fw-bold">25-Jan-2023 16.00</p>
+                  <div class="card-tab col-5">
+                    <!-- <p class=" text-end">Full Container Load (FCL)</p> -->
+                     <p class=" d-none d-md-block text-end">Full Container Load (FCL)</p>
+                      <h5 class="main-color mb-1 mt-4  text-end">Surabaya (IDSUB)</h5>
+                       <p class="mb-1  text-end">Est.Time Arrival</p>
+                        <p class="mb-1 fw-bold  text-end">25-Jan-2023 14.00</p>
+                        <p class="m-0  text-end">Est. Time Berthing</p>
+                        <p class="m-0 fw-bold  text-end">25-Jan-2023 16.00</p>
                       </div>
                      <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
 
@@ -463,8 +620,10 @@
                     </template>
                   </div>
                 </div>
+                
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -476,16 +635,16 @@
       <footer class="footer-ats text-white">
         <div class="container py-3">
           <div class="row">
-            <div class="col-md-3 col-lg-5 col-xl-5 mt-3 ftrats">
+            <div class="col-md-4 col-lg-5 col-xl-5 mt-3 ftrats">
               <img src="assets/img/Logo.svg" alt="Logo" height="32px" class="d-inline-block align-text-top mb-3"/>
               <h5 class="mb-3">
                 PT. Linus Trans Teknologi
               </h5>
-              <p>
+              <p class="ftrdesc">
                 Mempermudah dan Memvisualisasikan Pengiriman Container di Indonesia
               </p>
             </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mt-3 ftrats">
+            <div class="col-md-4 col-lg-2 col-xl-2 mt-3 ftrats ps-md-5">
               <h6 class="mb-4 font-weight-bold">
                 Navigasi
               </h6>
@@ -502,7 +661,7 @@
                 <a class="text-white text-decoration-none">Bantuan</a>
               </p>
             </div>
-            <div class="col-md-3 col-lg-5 col-xl-5 mt-3 ftrats">
+            <div class="col-md-4 col-lg-5  col-xl-5 mt-3 ftrats">
               <h6 class="mb-4 font-weight-bold">Temukan Kami</h6>
               <p><i class="bi bi-geo-alt-fill me-2"></i>Jl Demak No 326-A, Jepara, Bubutan, Surabaya</p>
               <p><i class="bi bi-geo-alt-fill me-2"></i>Jakarta Garder City Savoy B2 - 27B, Cakung, Jakarta Timur, DKI Jakarta</p>
@@ -514,10 +673,10 @@
         <div class="footer-bwh text-start py-3">
           <div class="container">
             <div class="row">
-              <div class="col-9 align-self-center">
+              <div class="col-12 col-lg-9 col-md-8 align-self-center text-center text-md-start">
                 © 2023 Seaping. All rights reserved.
               </div>
-              <div class="col-3 text-end">
+              <div class="col-12 col-lg-3 col-md-4 text-center text-md-end">
                 <a href="" class="btn text-light"><i class="bi bi-facebook" width="24px"></i></a>
                 <a href="" class="btn text-light"><i class="bi bi-instagram" width="24px"></i></a>
                 <a href="" class="btn text-light"><i class="bi bi-youtube" width="24px"></i></a>
@@ -537,5 +696,13 @@
         toast: false,
       }).bindClickHandler('data-swal-template')
         
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+      <script>
+        $(function(){
+          $('#datepicker').datepicker();
+        });
       </script>
 </html>
