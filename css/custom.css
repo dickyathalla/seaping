@@ -50,8 +50,8 @@ color: #0A0A0A;
 
 @media screen and (max-width:500px) {
   .container{
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: auto;
   }
 }
@@ -73,6 +73,8 @@ color: #0A0A0A;
   align-items: center;
   gap: 260px;
   height: 60px;
+  position: sticky;
+  top: 0;
 }
 
 @media screen and (max-width:500px){
@@ -92,6 +94,8 @@ color: #0A0A0A;
     align-items: center;
     gap: 260px;
     height: 60px;
+    position: sticky;
+    top: 0;
   }
 }
 
@@ -655,6 +659,10 @@ color: #0A0A0A;
 
 /* about.html style */
 /* tentang style */
+/* #tentang .container{
+  margin-left: 20px;
+  margin-right: 20px;
+} */
 .tentang-tagline h1{
   font-family: var(--heading-font);
   font-style: normal;
@@ -684,6 +692,10 @@ color: #0A0A0A;
 
 .card-body{
   padding: 24px;
+}
+
+.logoabout{
+  max-width: 100%;
 }
 
 /* Temukan style */
@@ -1377,7 +1389,7 @@ line-height: 20px;
 }
 
 #register form{
-  margin: 240px;
+  margin: 40px 240px ;
   width: fit-content;
 }
 
@@ -1389,7 +1401,7 @@ line-height: 20px;
 }
 @media screen and (max-width:500px) {
   #register form{
-    margin: 20px;
+    margin: auto;
     width: fit-content;
   }
 }
