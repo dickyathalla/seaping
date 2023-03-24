@@ -28,7 +28,7 @@
     <!-- Navbar -->
     <input type="checkbox" id="toggle">
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
+        <div class="container-fluid ">
           <a class="navbar-brand" href="#">
             <img src="assets/img/Logo.svg" alt="Logo" height="28px" class="" />
           </a>
@@ -69,12 +69,12 @@
         </div>
       </nav>
 
-      <img class="bg-img d-none d-md-block" src="assets/img/herofcl.png">
+      <img class="bg-img d-none d-lg-block" src="assets/img/herofcl.png">
       <!-- Akhir Navbar -->
       
       <!-- Input Rute -->     
       <section id="inputrute">
-        <div class="container h-100 justify-content-center mx-auto">
+        <div class="container h-100 justify-content-center mx-auto px-4 d-none d-lg-block">
           <div class="row">
             <div class="modal-remove card">
               <div class="card-body">
@@ -136,10 +136,10 @@
 
       <!-- hasil -->
       <section id="hasil">
-        <div class="container h-100 mx-auto">
+        <div class="container h-100 mx-auto px-4 px-md-5 px-lg-3">
           <div class="row">
-            <div class="col-12 col-md-8 ">
-              <h5 class="mt-sm-0 mt-md-4 mt-xl-5 pt-xl-5 mb-0">Menampilkan jadwal dari Surabaya ke Ambon</h5>
+            <div class="col-12 col-md-8">
+              <h5 class="mt-4 mb-0">Menampilkan jadwal dari Surabaya ke Ambon</h5>
               <p>2 hasil dari 1 rute</p>
             </div>
             <div class="col-4 d-none d-md-block d-lg-none">
@@ -309,41 +309,40 @@
       <!--offcanvas-->
       <!-- Hasil -->
       <section id="hasilsch">
-        <div class="container h-100 mx-auto">
+        <div class="container h-100 mx-auto px-4 px-lg-3 px-md-4">
           <div class="row mb-5 mx-auto">
             <!-- hasil pertama -->
             <div class="card my-2 px-0">
               <div class="card-body">
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <h5 class="main-color fw-bolder py-1 px-2 mb-0 d-block d-lg-none">Gulf Mass 5/23</h5>
+                  </div>
+                  <div class="col-12 col-sm-6 labelsch pe-4 text-sm-end">
+                    <p class="d-inline-block d-lg-none">Full Container Load (FCL)</p>
+                  </div>
+                </div>
                 <div class="tab-row row mx-auto">
-                  <div class="row">
-                    <div class="col-8">
-                    <h5 class="main-color fw-bolder mb-1 d-block d-md-none">Gulf Mass 5/23</h5>
-                    <p class="woy d-block d-md-none">Full Container Load (FCL)</p>
-                  </div>
-                  </div>
-                  <div class="col-5 col-md-6">
-                    <h5 class="main-color fw-bolder mb-1 d-none d-md-block">Gulf Mass 5/23</h5>
+                  <div class="col-5 col-md-6 px-2">
                       <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
                        <p class="mb-1">Closing time</p>
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0">Est. Time Departure</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
                   </div>
-                   <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
-                        <div class="material-icons arrowright p-0 main-color">
-                          arrow_circle_right
-                          </div>
+                  <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
+                      <div class="material-icons arrowright p-0 main-color">
+                        arrow_circle_right
                       </div>
-                  <div class="card-tab col-5">
-                    <!-- <p class=" text-end">Full Container Load (FCL)</p> -->
-                     <p class=" d-none d-md-block text-end">Full Container Load (FCL)</p>
+                  </div>
+                  <div class="card-tab col-5 px-2">
                       <h5 class="main-color mb-1 mt-4  text-end">Surabaya (IDSUB)</h5>
                        <p class="mb-1  text-end">Est.Time Arrival</p>
                         <p class="mb-1 fw-bold  text-end">25-Jan-2023 14.00</p>
                         <p class="m-0  text-end">Est. Time Berthing</p>
                         <p class="m-0 fw-bold  text-end">25-Jan-2023 16.00</p>
                         <p class="mt-2 main-color fw-bold  text-end">Rp.15,000,000</p>
-                      </div>
+                  </div>
                      <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
 
                 </div>
@@ -388,7 +387,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-2 px-0">
+                  <div class="col-2 px-0 pesan">
                     <h5 class="main-color m-0 text-center">15.000.000</h5>
                     <a class="btn-pesan mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
                     <template id="my-template">
@@ -411,45 +410,41 @@
                         value="popup => console.log(popup)" />
                     </template>
                   </div>
-                </div>
-                
+                </div>                
               </div>
             </div>
             <!-- hasil kedua -->
             <div class="card my-2 px-0">
               <div class="card-body">
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <h5 class="main-color fw-bolder py-1 px-2 mb-0 d-block d-lg-none">Gulf Mass 5/23</h5>
+                  </div>
+                  <div class="col-12 col-sm-6 labelsch pe-4 text-sm-end">
+                    <p class="d-inline-block d-lg-none">Full Container Load (FCL)</p>
+                  </div>
+                </div>
                 <div class="tab-row row mx-auto">
-                 <div class="row">
-                    <div class="col-7 ">
-                    <h5 class="main-color fw-bolder mb-1 d-block d-md-none">Gulf Mass 5/23</h5>
-                    <p class="woy d-block d-md-none">Full Container Load (FCL)</p>
-                  </div>
-                  </div>
-                  <div class="col-5 col-md-6">
-                    <h5 class="main-color fw-bolder mb-1 d-none d-md-block">Gulf Mass 5/23</h5>
-                    
+                  <div class="col-5 col-md-6 px-2">
                       <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
                        <p class="mb-1">Closing time</p>
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0">Est. Time Departure</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
                   </div>
-                   <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
-                        <div class="material-icons arrowright p-0 main-color">
-                          arrow_circle_right
-                          </div>
+                  <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
+                      <div class="material-icons arrowright p-0 main-color">
+                        arrow_circle_right
                       </div>
-                  <div class="card-tab col-5">
-                    <!-- <p class=" text-end">Full Container Load (FCL)</p> -->
-                     <p class=" d-none d-md-block text-end">Full Container Load (FCL)</p>
+                  </div>
+                  <div class="card-tab col-5 px-2">
                       <h5 class="main-color mb-1 mt-4  text-end">Surabaya (IDSUB)</h5>
                        <p class="mb-1  text-end">Est.Time Arrival</p>
                         <p class="mb-1 fw-bold  text-end">25-Jan-2023 14.00</p>
                         <p class="m-0  text-end">Est. Time Berthing</p>
                         <p class="m-0 fw-bold  text-end">25-Jan-2023 16.00</p>
                         <p class="mt-2 main-color fw-bold  text-end">Rp.15,000,000</p>
-
-                      </div>
+                  </div>
                      <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
 
                 </div>
@@ -494,7 +489,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-2 px-0">
+                  <div class="col-2 px-0 pesan">
                     <h5 class="main-color m-0 text-center">15.000.000</h5>
                     <a class="btn-pesan mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
                     <template id="my-template">
@@ -517,45 +512,41 @@
                         value="popup => console.log(popup)" />
                     </template>
                   </div>
-                </div>
-                
+                </div>                
               </div>
             </div>
             <!-- hasil ketiga -->
             <div class="card my-2 px-0">
               <div class="card-body">
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <h5 class="main-color fw-bolder py-1 px-2 mb-0 d-block d-lg-none">Gulf Mass 5/23</h5>
+                  </div>
+                  <div class="col-12 col-sm-6 labelsch pe-4 text-sm-end">
+                    <p class="d-inline-block d-lg-none">Full Container Load (FCL)</p>
+                  </div>
+                </div>
                 <div class="tab-row row mx-auto">
-                 <div class="row">
-                    <div class="col-7 ">
-                    <h5 class="main-color fw-bolder mb-1 d-block d-md-none">Gulf Mass 5/23</h5>
-                    <p class="woy d-block d-md-none">Full Container Load (FCL)</p>
-                  </div>
-                  </div>
-                  <div class="col-5 col-md-6">
-                    <h5 class="main-color fw-bolder mb-1 d-none d-md-block">Gulf Mass 5/23</h5>
-                    
+                  <div class="col-5 col-md-6 px-2">
                       <h5 class="main-color mb-1 mt-4">Surabaya (IDSUB)</h5>
                        <p class="mb-1">Closing time</p>
                         <p class="mb-1 fw-bold">15-Jan-2023 23.59</p>
                         <p class="m-0">Est. Time Departure</p>
                         <p class="m-0 fw-bold">15-Jan-2023 23.59</p>
                   </div>
-                   <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
-                        <div class="material-icons arrowright p-0 main-color">
-                          arrow_circle_right
-                          </div>
+                  <div class="arrow-circle col-2 col-md-1 d-flex align-items-center position-relative">
+                      <div class="material-icons arrowright p-0 main-color">
+                        arrow_circle_right
                       </div>
-                  <div class="card-tab col-5">
-                    <!-- <p class=" text-end">Full Container Load (FCL)</p> -->
-                     <p class=" d-none d-md-block text-end">Full Container Load (FCL)</p>
+                  </div>
+                  <div class="card-tab col-5 px-2">
                       <h5 class="main-color mb-1 mt-4  text-end">Surabaya (IDSUB)</h5>
                        <p class="mb-1  text-end">Est.Time Arrival</p>
                         <p class="mb-1 fw-bold  text-end">25-Jan-2023 14.00</p>
                         <p class="m-0  text-end">Est. Time Berthing</p>
                         <p class="m-0 fw-bold  text-end">25-Jan-2023 16.00</p>
                         <p class="mt-2 main-color fw-bold  text-end">Rp.15,000,000</p>
-
-                      </div>
+                  </div>
                      <a class="btn-pesan-tab mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
 
                 </div>
@@ -600,7 +591,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-2 px-0">
+                  <div class="col-2 px-0 pesan">
                     <h5 class="main-color m-0 text-center">15.000.000</h5>
                     <a class="btn-pesan mt-3 mx-auto" href="#" data-swal-template='#my-template'role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pesan</a> 
                     <template id="my-template">
@@ -623,8 +614,7 @@
                         value="popup => console.log(popup)" />
                     </template>
                   </div>
-                </div>
-                
+                </div>                
               </div>
             </div>
 
