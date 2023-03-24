@@ -28,19 +28,17 @@
     <!-- Navbar -->
     <input type="checkbox" id="toggle">
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid ">
-          <a class="navbar-brand" href="#">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-0 ps-md-5 ps-lg-4 ps-xl-5" href="#">
             <img src="assets/img/Logo.svg" alt="Logo" height="28px" class="" />
           </a>
-         
-          <label class="navbar-toggler" style="color:none;border:none;" for="toggle">
+        
+          <label class="navbar-toggler pe-3 pe-md-5 pe-lg-4 pe-xl-5" style="color:none;border:none;" for="toggle">
             <span class="bar" ></span>
             <span class="bar" ></span>
             <span class="bar" ></span>
           </label>
-  
-          
-            <ul class="nav-list navbar-nav ms-auto p-3 mb-2 mb-lg-0">
+            <ul class="nav-list navbar-nav ms-auto p-3 mb-2 mb-lg-0 pe-0 pe-md-5 pe-lg-4 pe-xl-5">
               <li class="nav-item align-self-center align-self-md-start me-2">
                 <a class="nav-link active text-light" aria-current="page" href="index.html">Beranda</a>
               </li>
@@ -48,7 +46,7 @@
                 <a class="nav-link active text-light" href="livemap.html">Pelacakan</a>
               </li>
               <li class="nav-item align-self-center align-self-md-start me-2">
-                <a class="nav-link active text-light" href="index.html">Layanan</a>
+                <a class="nav-link active text-light" href="#layanan">Layanan</a>
               </li>
               <li class="nav-item align-self-center align-self-md-start me-2">
                 <a class="nav-link active text-light" href="about us.html">Tentang Kami</a>
@@ -59,14 +57,12 @@
               </a>
               </li>
               <li class="nav-item align-self-center align-self-md-start me-2">
-               <a href="register.html">
+              <a href="register.html">
                 <button class="button-secondary">Daftar</button>
               </a>
               </li>
             </ul>
-            </div>
           </div>
-        </div>
       </nav>
 
       <img class="bg-img d-none d-lg-block" src="assets/img/herofcl.png">
@@ -83,12 +79,7 @@
                     <div class="form-group">
                       <label class="lbl-form">Tipe Pengiriman</label>
                       <select class="form-select" aria-label="Default select example">
-                        <option selected>
-                          <div>
-                            <div class="material-icons"> &#xe1a1;</div>
-                            <div>Port to Port</div>
-                          </div>
-                        </option> 
+                        <option value="1" selected>Port to Port</option>
                         <option value="2">Port to Door</option>
                         <option value="3">Door to Port</option>
                         <option value="4">Door to Door</option>
@@ -99,8 +90,8 @@
                     <div class="form-group">
                       <label class="lbl-form">Tipe Pengiriman</label>
                       <select class="form-select" aria-label="Default select example">
-                        <option selected>&#xe532 Full Container Load (FCL)</option> 
-                        <option value="2">Port to Door</option>
+                        <option value="1" selected>Full Container Load (FCL)</option> 
+                        <option value="2">Less Container Load (LCL)</option>
                       </select>
                     </div>
                   </div>
@@ -108,10 +99,10 @@
                     <div class="form-group">
                       <label class="lbl-form">Tipe Pengiriman</label>
                       <select class="form-select" aria-label="Default select example">
-                        <option selected>&#x29E9; Filter</option> 
-                        <option value="2">Port to Door</option>
-                        <option value="3">Door to Port</option>
-                        <option value="4">Door to Door</option>
+                        <option value="1" selected>Ambon (IDAMQ), Kep. Maluku</option> 
+                        <option value="2">Balikpapan (IDBPN), Kalimantan</option>
+                        <option value="3">Banda Aceh (IDBTJ), Sumatera</option>
+                        <option value="4">Tual (IDTUA), Kep. Maluku</option>
                       </select>
                     </div>
                   </div>
@@ -119,10 +110,10 @@
                     <div class="form-group">
                       <label class="lbl-form">Tipe Pengiriman</label>
                       <select class="form-select" aria-label="Default select example">
-                        <option selected>&#x29E9; Filter</option> 
-                        <option value="2">Port to Door</option>
-                        <option value="3">Door to Port</option>
-                        <option value="4">Door to Door</option>
+                        <option value="1" selected>Ambon (IDAMQ), Kep. Maluku</option> 
+                        <option value="2">Balikpapan (IDBPN), Kalimantan</option>
+                        <option value="3">Banda Aceh (IDBTJ), Sumatera</option>
+                        <option value="4">Tual (IDTUA), Kep. Maluku</option>
                       </select>
                     </div>
                   </div>
@@ -182,7 +173,6 @@
                       <select class="form-select float-end d-fixed border border-secondary rounded-3" style="width:50%;" aria-label="Default select example">
                         <option selected>
                           <div>
-                            <div class="material-icons"> &#xe1a1;</div>
                             <div>Keberangkatan paling awal</div>
                           </div>
                         </option> 
@@ -294,7 +284,6 @@
                      <select class="form-select  border border-secondary rounded-3" style="width:100%;" aria-label="Default select example">
                         <option selected>
                           <div>
-                            <div class="material-icons"> &#xe1a1;</div>
                             <div>Keberangkatan paling awal</div>
                           </div>
                         </option> 
