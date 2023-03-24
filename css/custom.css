@@ -164,13 +164,20 @@ color: #0A0A0A;
 
 @media screen and (min-width:576px) and (max-width:992px){
   #hero{
+    margin-top: 20px;
     height: 80vh;
   }
 } 
-
-@media screen and (min-width:0px) and (max-width:400px){
+@media screen and (min-width:420px) and (max-width:576px){
   #hero{
-    height: 90vh;
+    margin-top: 20px;
+    height: 80vh;
+  }
+} 
+@media screen and (min-width:0px) and (max-width:420px){
+  #hero{
+    margin-top: 20px;
+    height: 80vh;
   }
 } 
 @media screen and (max-height:800px) and (max-width:400px){
@@ -1616,9 +1623,9 @@ line-height: 20px;
 }
 
 @media screen and (min-width:992px){
-  #hero{
-    /* margin-top: 100px; */
-  }
+  /* #hero{
+    margin-top: 100px;
+  } */
   .hero-tagline{
     color: #fff;
   }
