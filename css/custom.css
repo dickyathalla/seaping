@@ -1,7 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&family=Public+Sans:wght@400;500;700;800&display=swap');
 
 :root {
-  --main-color: #2f5597;
+  --main-color: #092179;
   --body-color: #F7F9FD;
 
   --main-font: "Public Sans", sans-serif;
@@ -45,7 +45,6 @@ color: #0A0A0A;
 .container{
   margin-left: 60px;
   margin-right: 60px;
-  width: auto;
 }
 
 @media screen and (max-width:500px) {
@@ -73,8 +72,12 @@ color: #0A0A0A;
   align-items: center;
   gap: 260px;
   height: 60px;
-  position: sticky;
-  top: 0;
+}
+
+.sticky-top{
+  position: -webkit-sticky !important;
+    position: sticky;
+    top: 0;
 }
 
 @media screen and (max-width:500px){
@@ -94,8 +97,6 @@ color: #0A0A0A;
     align-items: center;
     gap: 260px;
     height: 60px;
-    position: sticky;
-    top: 0;
   }
 }
 
@@ -140,8 +141,19 @@ color: #0A0A0A;
 
 /* Hero section */
 #hero{
-  height: 100vh;
+  /* margin-top: 110px; */
+  height: 80vh;
   width: 100%;
+}
+/* #hero .row{
+  margin-top: 50px;
+} */
+.mt-8{
+  margin-top: 100px;
+}
+.HeroImageNew{
+  filter: brightness(50%);
+  height: 100vh;
 }
 
 /* @media screen and (min-width:1000px) {
@@ -150,7 +162,7 @@ color: #0A0A0A;
   }
 } */
 
-@media screen and (min-width:500px) and (max-width:1000px){
+@media screen and (min-width:500px) and (max-width:992px){
   #hero{
     height: 80vh;
   }
@@ -212,7 +224,7 @@ color: #0A0A0A;
 
 
 .btn-carijadwal{
-  background: #2F5597;
+  background: #092179;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -233,7 +245,7 @@ color: #0A0A0A;
 }
 
 .btn-carijadwal:hover{
-  background: #2F5597;
+  background: #092179;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -291,7 +303,7 @@ color: #0A0A0A;
   font-family: var(--button-font);
   font-size: 16px;
   margin-left: 5px;
-  transition: .2s;
+  transition: .8s;
   line-height: 0px;
   display: none;
 }
@@ -324,6 +336,8 @@ color: #0A0A0A;
   line-height: 58px;
   text-transform: capitalize;
   text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 
@@ -397,7 +411,7 @@ color: #0A0A0A;
     padding-bottom: 24px ;
   }
   .card-tagline{
-    padding: 0 12px;
+    padding: 0 20px;
   }
   .card-tagline .card{
     display: block;
@@ -659,6 +673,9 @@ color: #0A0A0A;
 
 /* about.html style */
 /* tentang style */
+/* #tentang{
+  margin-top: 110px;
+} */
 /* #tentang .container{
   margin-left: 20px;
   margin-right: 20px;
@@ -1186,6 +1203,20 @@ line-height: 20px;
   color: #20573D;
 }
 
+.labelsch p{
+  background-color: #F7F7F7;
+  padding: 4px 12px;
+  border-radius: 96px;
+  margin: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #20573D;
+}
+
 .tujuancardsch{
   padding-left: 90px;
 }
@@ -1207,7 +1238,7 @@ line-height: 20px;
   width: 82px;
   height: 40px;
 
-  background: #2F5597;
+  background: #092179;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -1227,7 +1258,7 @@ line-height: 20px;
   width: 100%;
   height: 40px;
 
-  background: #2F5597;
+  background: #092179;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -1236,6 +1267,12 @@ line-height: 20px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+.pesan a:hover{
+  color: #e2e2e2;
+}
+.btn-pesan-tab a:hover{
+  color: #FFF;
 }
 /* .btn-sch{
   width: 262.25px;
@@ -1448,7 +1485,7 @@ line-height: 20px;
     text-transform: capitalize;
   }
   .btn-carijadwal{
-    background: #2F5597;
+    background: #092179;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
@@ -1569,6 +1606,15 @@ line-height: 20px;
   }
 }
 
+@media screen and (min-width:992px){
+  #hero{
+    /* margin-top: 100px; */
+  }
+  .hero-tagline{
+    color: #fff;
+  }
+}
+
 /* Bendo */
 .filter-tab{
   display: none;
@@ -1580,7 +1626,7 @@ line-height: 20px;
 .input-group-append {
   cursor: pointer;
 }
-@media (max-width:1000px){
+@media (max-width:992px){
   #inputrute .card{
     display: none;
   } 
@@ -1665,7 +1711,7 @@ height: 44px;
 
 /* Primary/Main */
 
-background: #2F5597;
+background: #092179;
 border-radius: 8px;
 
 /* Inside auto layout */
@@ -1691,7 +1737,7 @@ height: 44px;
 
 border-radius: 8px;
 background: none;
-border:1px solid #2F5597;
+border:1px solid #092179;
 
 /* Inside auto layout */
 
@@ -1703,7 +1749,7 @@ flex-grow: 0;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   nav .navbar-brand {
   margin-bottom: 21px;
 }
@@ -1945,7 +1991,7 @@ margin-bottom: 50px;
 }
 @media screen and (max-width:780px){
   #hasilsch h5{
-      font-size: 12px;
+      font-size: 16px;
   }
   #hasilsch p{
     font-size: 12px;
@@ -1974,7 +2020,7 @@ margin-bottom: 50px;
   z-index: 99;
   color: white;
   transition: .2s;
-  background-color:  #2F5597;
+  background-color:  #092179;
   font-family: 'Public Sans';
 font-style: normal;
 font-weight: 500;
@@ -2007,21 +2053,5 @@ color: #FFFFFF;
 
 #filter.btn-floating:hover span{
   display: inline-block;
-}
-.tab-row .woy{
-  background-color: #F7F7F7;
-  padding: 4px 12px;
-  border-radius: 96px;
-  /* margin: 0; */
-  height: 28px;
-  display: inline;
-
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  /* line-height: 20px; */
-  /* text-align: center; */
-  color: #20573D;
 }
 }
