@@ -47,7 +47,7 @@ color: #0A0A0A;
   margin-right: 60px;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:576px) {
   .container{
     margin-left: 20px;
     margin-right: 20px;
@@ -62,8 +62,8 @@ color: #0A0A0A;
   font-weight: 500;
   line-height: 24px;
   background-color: var(--main-color);
-  margin: 28px 72px 0 72px;
-  border-radius: 14px;
+  /* margin: 28px 72px 0 72px;
+  border-radius: 14px; */
 
   display: flex;
   padding-left: 1rem;
@@ -80,15 +80,15 @@ color: #0A0A0A;
     top: 0;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:576px){
   .navbar {
     font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     background-color: var(--main-color);
-    margin: 32px 20px 0 20px;
-    border-radius: 14px;
+    /* margin: 32px 20px 0 20px;
+    border-radius: 14px; */
   
     display: flex;
     padding-left: 1rem;
@@ -162,13 +162,18 @@ color: #0A0A0A;
   }
 } */
 
-@media screen and (min-width:500px) and (max-width:992px){
+@media screen and (min-width:576px) and (max-width:992px){
   #hero{
     height: 80vh;
   }
 } 
 
-@media screen and (min-width:0px) and (max-width:500px){
+@media screen and (min-width:0px) and (max-width:400px){
+  #hero{
+    height: 90vh;
+  }
+} 
+@media screen and (max-height:800px) and (max-width:400px){
   #hero{
     height: 110vh;
   }
@@ -321,6 +326,7 @@ color: #0A0A0A;
   background-color: white;
   padding-top: 48px ;
   padding-bottom: 48px ;
+  margin-top: 20px;
 }
 
 #layanan .card-tagline .card{
@@ -373,7 +379,7 @@ color: #0A0A0A;
   }
 }
 
-@media screen and (min-width:400px) and (max-width:900px){
+@media screen and (min-width:400px) and (max-width:992px){
   .layanan-tagline h1{
     font-family: var(--heading-font);
     font-style: normal;
@@ -405,7 +411,7 @@ color: #0A0A0A;
   }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:576px){
   #layanan{
     padding-top: 24px ;
     padding-bottom: 24px ;
@@ -483,7 +489,7 @@ color: #0A0A0A;
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:992px){
   .mengapa-card{
     justify-content: center;
     left: 0px;
@@ -492,7 +498,7 @@ color: #0A0A0A;
     width: 342px;
   }
 }
-@media screen and (min-width:900px){
+@media screen and (min-width:992px){
   .mengapa-card{
     z-index: 3;
     left: -63px;
@@ -863,8 +869,11 @@ color: #0A0A0A;
 #resi{
   height: 80vh;
 }
+.inputresi{
+  height: 40px;
+}
 
-@media screen and (min-width:600px) and (max-width:900px){
+@media screen and (min-width:600px) and (max-width:992px){
   .inputresi{
     display: block;
     width: 100%;
@@ -1380,13 +1389,13 @@ line-height: 20px;
   line-height: 28px;
 }
 
-@media screen and (min-width:500px) and (max-width:900px) {
+@media screen and (min-width:576px) and (max-width:992px) {
   #login form{
     margin: 80px;
     width: fit-content;
   }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:576px) {
   #login form{
     margin: 20px;
     width: fit-content;
@@ -1430,13 +1439,13 @@ line-height: 20px;
   width: fit-content;
 }
 
-@media screen and (min-width:500px) and (max-width:900px) {
+@media screen and (min-width:576px) and (max-width:992px) {
   #register form{
     margin: 80px;
     width: fit-content;
   }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:576px) {
   #register form{
     margin: auto;
     width: fit-content;
@@ -1450,7 +1459,7 @@ line-height: 20px;
 }
 
 /* Media Query */
-@media screen and (min-width:600px) and (max-width:900px) {
+@media screen and (min-width:600px) and (max-width:992px) {
   .hero-tagline h1{
     font-family: var(--heading-font);
     font-style: normal;
@@ -1847,7 +1856,7 @@ input:checked ~ nav .nav-list {
 }
 
 input:checked ~ nav .navbar-toggler {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
@@ -1867,9 +1876,9 @@ margin-bottom: 50px;
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 922px) {
   nav .navbar-brand {
-  margin-bottom: 21px;
+  margin-bottom: 21px ; 
 }
 .user-id{
   padding-left: 24px;
@@ -1972,7 +1981,7 @@ input:checked ~ nav .nav-list {
 }
 
 input:checked ~ nav .navbar-toggler {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
