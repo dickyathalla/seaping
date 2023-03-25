@@ -21,7 +21,7 @@ body {
   font-family: 'Public Sans';
 font-style: normal;
 font-weight: 500;
-font-size: 16px;
+font-size: 14px;
 line-height: 24px;
 /* identical to box height, or 150% */
 
@@ -39,7 +39,7 @@ color: #0A0A0A;
   color: #3D3F40;
 }
 .title-article{
-  font-size: 36px;
+  font-size: 34px;
 }
 
 .container{
@@ -58,7 +58,7 @@ color: #0A0A0A;
 /* Navbar style */
 .navbar {
   font-family: var(--main-font);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   background-color: var(--main-color);
@@ -83,7 +83,7 @@ color: #0A0A0A;
 @media screen and (max-width:576px){
   .navbar {
     font-family: var(--main-font);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     background-color: var(--main-color);
@@ -117,7 +117,7 @@ color: #0A0A0A;
   border: 0;
   border-radius: 8px;
   font-family: var(--button-font);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--main-color);
   margin-right: 4px;
@@ -177,12 +177,13 @@ color: #0A0A0A;
 @media screen and (min-width:0px) and (max-width:420px){
   #hero{
     margin-top: 20px;
-    height: 80vh;
+    height: 110vh;
   }
 } 
-@media screen and (max-height:800px) and (max-width:400px){
+@media screen and (min-height:800px) and (max-width:576px){
   #hero{
-    height: 110vh;
+    margin-top: 20px;
+    height: 80vh;
   }
 } 
 
@@ -190,7 +191,7 @@ color: #0A0A0A;
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 50px;
   line-height: 58px;
   text-transform: capitalize;
 }
@@ -199,7 +200,7 @@ color: #0A0A0A;
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 58px;
   text-transform: capitalize;
 }
@@ -210,7 +211,7 @@ color: #0A0A0A;
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 36px;
 }
 
@@ -227,7 +228,7 @@ color: #0A0A0A;
   padding: 20px 32px;
   font-family: var(--main-font);
   font-weight: 800;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .hero-card .card-body{
@@ -252,7 +253,7 @@ color: #0A0A0A;
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -273,7 +274,7 @@ color: #0A0A0A;
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -283,6 +284,10 @@ color: #0A0A0A;
   font-weight: 700;
   
 } */
+
+#header{
+  height: 200px;
+}
 
 /* wa floating style */
 #wa.btn-floating{
@@ -313,7 +318,7 @@ color: #0A0A0A;
 
 #wa.btn-floating span{
   font-family: var(--button-font);
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 5px;
   transition: .8s;
   line-height: 0px;
@@ -345,7 +350,7 @@ color: #0A0A0A;
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 58px;
   text-transform: capitalize;
   text-align: center;
@@ -357,7 +362,7 @@ color: #0A0A0A;
 .card-tagline h5{
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
   color: var(--main-color);
   text-align: center;
@@ -368,7 +373,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: black;
@@ -411,7 +416,7 @@ color: #0A0A0A;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     text-align: center;
     color: black;
@@ -434,7 +439,7 @@ color: #0A0A0A;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     text-transform: capitalize;
     text-align: center;
@@ -443,7 +448,7 @@ color: #0A0A0A;
   .card-tagline h5{
     font-family: var(--main-font);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: var(--main-color);
     text-align: center;
@@ -454,7 +459,7 @@ color: #0A0A0A;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     text-align: center;
     margin: 0;
@@ -462,11 +467,13 @@ color: #0A0A0A;
   }
 }
 /* Mengapa style */
+
+
 .mengapa-tagline h1{
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 58px;
   text-transform: capitalize;
 }
@@ -474,7 +481,7 @@ color: #0A0A0A;
 .mengapa-tagline h5{
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
   color: var(--main-color);
   align-items: center;
@@ -485,7 +492,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: black;
 }
@@ -499,19 +506,20 @@ color: #0A0A0A;
 @media screen and (max-width:992px){
   .mengapa-card{
     justify-content: center;
-    left: 0px;
     border: 0;
     border-radius: 16px;
     width: 342px;
   }
 }
 @media screen and (min-width:992px){
+  #mengapa{
+    background-image: url(../assets/img/Hero\ Image\ New\ 7.jpg);
+  }
   .mengapa-card{
     z-index: 3;
-    left: -63px;
+    left: 0px;
     border: 0;
     border-radius: 16px;
-    width: 342px;
   }
 }
 
@@ -520,7 +528,7 @@ color: #0A0A0A;
   right: 8.33%;
   top: 4.17%;
   bottom: 4.17%;
-  font-size: 33px;
+  font-size: 30px;
 }
 /* Tutorial style */
 #tutorial{
@@ -536,7 +544,7 @@ color: #0A0A0A;
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 58px;
   text-transform: capitalize;
   text-align: center;
@@ -580,7 +588,7 @@ color: #0A0A0A;
 #artikel h3{
   font-family: var(--heading-font);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 #artikel a{
@@ -596,7 +604,7 @@ color: #0A0A0A;
 #artikel h4{
   font-family: var(--heading-font);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   color: #5D5F61;
 }
 
@@ -610,12 +618,12 @@ color: #0A0A0A;
 .artikel-card h5{
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .artikel-card p{
   font-family: var(--main-font);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   margin: 0;
@@ -652,7 +660,7 @@ color: #0A0A0A;
 .ftrats h5{
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: white;
 }
@@ -660,7 +668,7 @@ color: #0A0A0A;
 .ftrats p{
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: white;
 }
@@ -675,7 +683,7 @@ color: #0A0A0A;
 .btn-selengkapnya{
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: var(--main-color);
 }
@@ -697,7 +705,7 @@ color: #0A0A0A;
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 58px;
   text-transform: capitalize;
   margin-bottom: 40px;
@@ -707,7 +715,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: var(--main-color);
 }
@@ -716,7 +724,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -754,7 +762,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: var(--main-color);
 }
@@ -763,7 +771,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -777,7 +785,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -789,7 +797,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: var(--main-color);
 }
@@ -811,7 +819,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: var(--main-color);
 }
@@ -824,7 +832,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -844,7 +852,7 @@ color: #0A0A0A;
 .btn-livemap{
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: var(--main-color);
   text-decoration: none;
@@ -858,7 +866,7 @@ color: #0A0A0A;
   font-family: var(--heading-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 44px;
   margin-bottom: 4px;
 }
@@ -867,7 +875,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -906,7 +914,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: white;
 }
@@ -931,7 +939,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -939,7 +947,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 44px;
   margin-bottom: 32px;
 }
@@ -963,7 +971,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
 }
 
@@ -971,7 +979,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -979,7 +987,7 @@ color: #0A0A0A;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;  
 }
 
@@ -1006,7 +1014,7 @@ color: #0A0A0A;
   padding-left:65px;
   min-width: 400px;
   font-family: 'Helvetica';
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .StepProgress {
@@ -1080,7 +1088,7 @@ background-color: var(--main-color);
     font-family:  var(--main-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
   }
   
@@ -1096,7 +1104,7 @@ background-color: var(--main-color);
     padding-left:65px;
     min-width: 400px;
     font-family: 'Helvetica';
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .StepProgress {
@@ -1169,6 +1177,14 @@ background-color: var(--main-color);
 .bg-img{
   position: absolute;
   width: 100%;
+  height: 250px;
+  z-index: 1;
+  top: 0;
+  filter: brightness(30%);
+}
+.bg-img1{
+  position: absolute;
+  width: 100%;
   z-index: 1;
   top: 0;
 }
@@ -1196,7 +1212,7 @@ background-color: var(--main-color);
   font-family: 'Public Sans';
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 12px;
 line-height: 20px;
 }
 
@@ -1213,7 +1229,7 @@ line-height: 20px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   text-align: center;
   color: #20573D;
@@ -1227,7 +1243,7 @@ line-height: 20px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   text-align: center;
   color: #20573D;
@@ -1261,7 +1277,7 @@ line-height: 20px;
   font-family: var(--button-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .btn-pesan-tab{
@@ -1281,7 +1297,7 @@ line-height: 20px;
   font-family: var(--button-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .pesan a:hover{
@@ -1318,7 +1334,7 @@ line-height: 20px;
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 44px;
   /* identical to box height, or 122% */
   
@@ -1366,7 +1382,7 @@ line-height: 20px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -1374,7 +1390,7 @@ line-height: 20px;
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -1392,7 +1408,7 @@ line-height: 20px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -1427,7 +1443,7 @@ line-height: 20px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .latest {
@@ -1437,7 +1453,7 @@ line-height: 20px;
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -1471,7 +1487,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 44px;
     text-transform: capitalize;
   }    
@@ -1479,7 +1495,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 44px;
     text-transform: capitalize;
   }
@@ -1487,7 +1503,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 58px;
     text-transform: capitalize;
     text-align: center;
@@ -1496,7 +1512,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 44px;
     text-transform: capitalize;
   }
@@ -1518,7 +1534,7 @@ line-height: 20px;
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
   }
 }
@@ -1533,7 +1549,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     text-transform: capitalize;
     text-align: center;
@@ -1542,7 +1558,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;  
     text-align: center;
   }
@@ -1550,7 +1566,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     text-transform: capitalize;
     text-align: center;
@@ -1559,7 +1575,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     text-transform: capitalize;
   }
@@ -1567,7 +1583,7 @@ line-height: 20px;
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     text-transform: capitalize;
   }
@@ -1575,22 +1591,22 @@ line-height: 20px;
   #artikel h3{
     font-family: var(--heading-font);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
   }
   #artikel h4{
     font-family: var(--heading-font);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     color: #5D5F61;
   }
   .artikel-card h5{
     font-family: var(--main-font);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
   }
   .artikel-card p{
     font-family: var(--main-font);
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 24px;
     margin: 0;
@@ -1598,14 +1614,14 @@ line-height: 20px;
   .artikel-card span{
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
     color: #0A0A0A;
   }
   /* footer */
   .ftrats h5{
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: white;
   }
@@ -1613,7 +1629,7 @@ line-height: 20px;
   .ftrats p{
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     color: white;
   }
@@ -1628,6 +1644,9 @@ line-height: 20px;
   } */
   .hero-tagline{
     color: #fff;
+  }
+  .mengapa-tagline{
+    color: #FFF;
   }
 }
 
@@ -1688,7 +1707,7 @@ border-radius: 24px 24px 0px 0px;
     order: 1;
     flex-grow: 0; 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     }
  .swal2-container.swal2-center>.swal2-popup{
@@ -1710,7 +1729,7 @@ border-radius: 24px 24px 0px 0px;
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 30px;
   }
   .swal2-styled.swal2-confirm{
@@ -1778,7 +1797,7 @@ height: 28px;
 font-family: 'Public Sans';
 font-style: normal;
 font-weight: 600;
-font-size: 20px;
+font-size: 18px;
 line-height: 28px;
 /* identical to box height, or 140% */
 
@@ -1899,7 +1918,7 @@ height: 28px;
 font-family: 'Public Sans';
 font-style: normal;
 font-weight: 600;
-font-size: 20px;
+font-size: 18px;
 line-height: 28px;
 /* identical to box height, or 140% */
 
@@ -2007,10 +2026,10 @@ margin-bottom: 50px;
 }
 @media screen and (max-width:780px){
   #hasilsch h5{
-      font-size: 16px;
+      font-size: 14px;
   }
   #hasilsch p{
-    font-size: 12px;
+    font-size: 14px;
   }
    #hasilsch  .card-body{
     padding: 16px;
@@ -2040,7 +2059,7 @@ margin-bottom: 50px;
   font-family: 'Public Sans';
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 12px;
 line-height: 20px;
 letter-spacing: -0.006em;
 
@@ -2060,7 +2079,7 @@ color: #FFFFFF;
 
 #filter.btn-floating span{
   font-family: var(--button-font);
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 5px;
   transition: .2s;
   line-height: 0px;
